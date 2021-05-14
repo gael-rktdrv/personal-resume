@@ -2,6 +2,9 @@
 
 <html>
 <head>
+    <title style="font-family: 'Trebuchet MS';">
+        Education
+    </title>
     <style>
     .body {
         box-sizing: border-box;
@@ -31,7 +34,7 @@
     }
 
     body {
-    background-image: url("img/constellation.jpg");
+    background-image: url("img/edu.jpg");
     }
     h1 {
         color: darkslategray;
@@ -50,14 +53,14 @@
     }
 
     h3 {
-        color:crimson;
+        color:black;
         text-align: left;
         font-family: "Clear Sans";
         font-size: larger;
         margin: 20px 20px 20px 20px;
     }
     p {
-        color: rgb(13, 70, 117);
+        color:dimgray;
         text-align: left;
         font-family: 'Clear Sans';
         font-size: medium;
@@ -65,13 +68,17 @@
     }
 
     ul {
-        color:rgb(9, 43, 70);
+        color:dimgray;
         list-style-type: circle;
         text-align: left;
-        font-family: serif;
+        font-family: "Clear Sans";
         list-style-type: none;
+        font-size: medium;
         overflow: hidden;
         margin: 20px 20px 20px 20px;
+    }
+    ul.b {
+        list-style-type: square;
     }
 
     img {
@@ -106,10 +113,10 @@
             <body>
                 <div style="background-color: black;">
                     <nav>
-                        <ul>
+                        <ul class="b">
                             <li class="navbar"><a class="a" href="index.html">About me</a></li>
                             <li class="navbar"><a class="a" href="edu.html">Education</a></li>
-                            <li class="navbar"><a class="a" href="#">Work Experience</a></li>
+                            <li class="navbar"><a class="a" href="exp.html">Work Experience</a></li>
                             <li class="navbar"><a class="a" href="#">Contact</a></li>
                         </ul>
                             <!-- A Search form is another common non-linear way to navigate through a website. -->
@@ -121,7 +128,7 @@
                     So basically this master is about technical support for aircraft operation and maintenance. 
                     It wraps up all the technology for a better and safer process for airlines and MRO to execute 
                     their work in conformity with EASA rules and amendements. I have the following knowledge:
-                    <ul>
+                    <ul class="b">
                         <li>Integrated Logistic Support</li>
                         <li>Reliabilty Support</li>
                         <li>Quality and Verification</li>
@@ -148,7 +155,7 @@
                 </p>
                 <p>
                     The course content are the following:
-                    <ul>
+                    <ul class="b">
                         <li>Linear models: perceptron and SVM</li>
                         <li>Recommender system</li>
                         <li>Neural network: Linear Neural Networks</li>
@@ -166,7 +173,7 @@
                 <h3>Python for Data Science</h3>
                 <p>
                     This course includes the main (and necessary) tools needed for a newbie data scientist.
-                    <ul>
+                    <ul class="b">
                         <li>Pythons basics</li>
                         <li>Jupyter Notebook</li>
                         <li>Pandas</li>
@@ -188,7 +195,7 @@
                  <p>
                      The entire course is done with help of the python's power in computation. The following main 
                      subjects are studied.
-                     <ul>
+                     <ul class="b">
                          <li>Sets and Counting</li>
                          <li>Discrete probability</li>
                          <li>General Discrete probability Spaces</li>
@@ -211,7 +218,7 @@
                  </p>
                  <p>
                      The related subject are:
-                     <ul>
+                     <ul class="b">
                          <li>Memory hierarchy, Latency vs Troughput</li>
                          <li>Spark Basics</li>
                          <li>DataFrames and SQL</li>
