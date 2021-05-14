@@ -47,7 +47,7 @@
     h2 {
         color: rgb(6, 126, 90);
         text-align: left;
-        font-family: 'cmr10';
+        font-family: 'Sabado';
         font-size: x-large;
         margin: 20px 20px 20px 20px;
     }
@@ -55,7 +55,7 @@
     h3 {
         color:black;
         text-align: left;
-        font-family: "Clear Sans";
+        font-family: "Sajola";
         font-size: larger;
         margin: 20px 20px 20px 20px;
     }
@@ -85,6 +85,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        height: auto;
     }
 
     .navbar {
@@ -93,36 +95,58 @@
         align-self: center;
     }
 
+    .navbar-list {
+        display: inline;
+        float: left;
+        align-self: center;
+        font-size: x-large;
+    }
+
+    .fixed-nav-bar {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color: #000000;
+        text-align: center;
+    }
+
     .a {
-        font-family: "Trocchi";
+        font-family: "Sabado";
         display: block;
         color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
+
+    .row-margin {
+        margin-top: 90px;
+    }
+
     </style>
- </head>
- <body>
+</head>
+
+<body>
+    <div style="background-color: black;">
+        <nav class="fixed-nav-bar">
+            <ul class="b">
+                <li><a class="a navbar-list" href="index.html">About me</a></li>
+                <li><a class="a navbar-list" href="edu.html">Education</a></li>
+                <li><a class="a navbar-list" href="exp.html">Work Experience</a></li>
+                <li><a class="a navbar-list" href="contact.html">Contact</a></li>
+            </ul>
+                <!-- A Search form is another common non-linear way to navigate through a website. -->
+        </nav>
+    </div>
+
     <div class="row">
         <div class="column left">
             <h2></h2>
             <p></p>
         </div>
-        <div class="column middle" style="background-color:#ffffff;">
-            <body>
-                <div style="background-color: black;">
-                    <nav>
-                        <ul class="b">
-                            <li class="navbar"><a class="a" href="index.html">About me</a></li>
-                            <li class="navbar"><a class="a" href="edu.html">Education</a></li>
-                            <li class="navbar"><a class="a" href="exp.html">Work Experience</a></li>
-                            <li class="navbar"><a class="a" href="#">Contact</a></li>
-                        </ul>
-                            <!-- A Search form is another common non-linear way to navigate through a website. -->
-                    </nav>
-                </div>
-            
+
+        <div class="column middle row-margin" style="background-color:#ffffff;">
+            <body>            
                 <h2>ATR/Airbus: Data Analyst</h2>
                 <p>
                     My main experience was as a data analyst at ATR, I was in charge of analysis of a large 

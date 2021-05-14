@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title style="font-family: 'Trebuchet MS';">
+        Education
+    </title>
+    <style>
+    .body {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 20%;
+    }
+
+    .middle {
+    width: 60%;
+    }
+    
+    .right {
+    width: 20%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    body {
+    background-image: url("img/contact.jpg");
+    }
+    h1 {
+        color: darkslategray;
+        text-align: left;
+        font-family: "Sabado";
+        font-size: xx-large;
+        margin: 20px 20px 20px 20px;
+    }
+
+    h2 {
+        color: rgb(6, 126, 90);
+        text-align: left;
+        font-family: 'Sabado';
+        font-size: x-large;
+        margin: 20px 20px 20px 20px;
+    }
+
+    h3 {
+        color:black;
+        text-align: left;
+        font-family: "Sajola";
+        font-size: larger;
+        margin: 20px 20px 20px 20px;
+    }
+    p {
+        color:dimgray;
+        text-align: left;
+        font-family: 'Clear Sans';
+        font-size: medium;
+        margin: 20px 20px 20px 20px;
+    }
+
+    ul {
+        color:dimgray;
+        list-style-type: circle;
+        text-align: left;
+        font-family: "Clear Sans";
+        list-style-type: none;
+        font-size: medium;
+        overflow: hidden;
+        margin: 20px 20px 20px 20px;
+    }
+    ul.b {
+        list-style-type: square;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .fixed-nav-bar {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color: #000000;
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+    /* This is used to make the navbar sticky, So that the
+        navbar stays at the top part even if we scroll */
+        position: sticky; 
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    
+    /*it specifies the mouse cursor to be displayed
+        when it is pointed over the element */
+        cursor: pointer;
+    }
+
+    .navbar-list {
+        display: inline;
+        float: left;
+        align-self: center;
+        font-size: x-large;
+    }
+
+    .a {
+        font-family: "Sabado";
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .row-margin {
+        margin-top: 90px;
+    }
+
+    * {box-sizing: border-box;}
+
+    .input-style {
+        font-family: "Clear Sans";
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%;
+        font-family: "Clear Sans";
+        padding: 12px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        font-family: "Clear Sans";
+        background-color: #000000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div style="background-color: black;">
+        <nav class="fixed-nav-bar">
+            <ul class="b">
+                <li><a class="a navbar-list" href="index.html">About me</a></li>
+                <li><a class="a navbar-list" href="edu.html">Education</a></li>
+                <li><a class="a navbar-list" href="exp.html">Work Experience</a></li>
+                <li><a class="a navbar-list" href="contact.html">Contact</a></li>
+            </ul>
+                <!-- A Search form is another common non-linear way to navigate through a website. -->
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <p></p>
+        </div>
+        <div class="column middle row-margin" style="background-color:#ffffff;">
+            <body>
+                <div>
+                    <link rel="apple-touch-icon" href="http://example.com/images/apple-touch-icon.png" />
+                </div>
+                <div class="container">
+                    <form action="action_page.php">
+                    
+                        <label class="input-style" for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label class="input-style" for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label class="input-style"  for="mail">E-mail address</label>
+                        <input type="text" id="mail" name="mailaddress" placeholder="Your last e-mail..">
+                    
+                        <label class="input-style"  for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    
+                    </form>
+                </div>
+            </body>
+        </div>
+        <div class="column right">
+            <p></p>
+        </div>
+    </div>
+ </body>
+    
+        
+
+                

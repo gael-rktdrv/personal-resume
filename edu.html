@@ -39,7 +39,7 @@
     h1 {
         color: darkslategray;
         text-align: left;
-        font-family: "Trocchi";
+        font-family: "Sabado";
         font-size: xx-large;
         margin: 20px 20px 20px 20px;
     }
@@ -47,7 +47,7 @@
     h2 {
         color: rgb(6, 126, 90);
         text-align: left;
-        font-family: 'cmr10';
+        font-family: 'Sabado';
         font-size: x-large;
         margin: 20px 20px 20px 20px;
     }
@@ -55,7 +55,7 @@
     h3 {
         color:black;
         text-align: left;
-        font-family: "Clear Sans";
+        font-family: "Sajola";
         font-size: larger;
         margin: 20px 20px 20px 20px;
     }
@@ -85,150 +85,191 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .fixed-nav-bar {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color: #000000;
+        text-align: center;
     }
 
     .navbar {
+        display: flex;
+    /* This is used to make the navbar sticky, So that the
+        navbar stays at the top part even if we scroll */
+        position: sticky; 
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+    
+    /*it specifies the mouse cursor to be displayed
+        when it is pointed over the element */
+        cursor: pointer;
+    }
+
+    .navbar-list {
         display: inline;
         float: left;
         align-self: center;
+        font-size: x-large;
     }
 
     .a {
-        font-family: "Trocchi";
+        font-family: "Sabado";
         display: block;
         color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
     }
+
+    .nav-center {
+        text-align: center;
+        vertical-align: middle;
+        float: none;
+        width: 100%;
+        background-color: black;
+    }
+
+    .row-margin {
+        margin-top: 90px;
+    }
+
     </style>
  </head>
  <body>
+    <div class="nav-center">
+        <nav class="fixed-nav-bar">
+            <ul class="b">
+                <li><a class="a navbar-list" href="index.html">About me</a></li>
+                <li><a class="a navbar-list" href="edu.html">Education</a></li>
+                <li><a class="a navbar-list" href="exp.html">Work Experience</a></li>
+                <li><a class="a navbar-list" href="contact.html">Contact</a></li>
+            </ul>
+                <!-- A Search form is another common non-linear way to navigate through a website. -->
+        </nav>
+    </div>
+
     <div class="row">
         <div class="column left">
-            <h2></h2>
             <p></p>
         </div>
-        <div class="column middle" style="background-color:#ffffff;">
+        <div class="column middle row-margin" style="background-color:#ffffff;">
             <body>
-                <div style="background-color: black;">
-                    <nav>
+                <div>
+                    <h2>UNIVERSITY OF BORDEAUX: Master in Aircraft Engineering</h2>
+                    <p>
+                        So basically this master is about technical support for aircraft operation and maintenance. 
+                        It wraps up all the technology for a better and safer process for airlines and MRO to execute 
+                        their work in conformity with EASA rules and amendements. I have the following knowledge:
                         <ul class="b">
-                            <li class="navbar"><a class="a" href="index.html">About me</a></li>
-                            <li class="navbar"><a class="a" href="edu.html">Education</a></li>
-                            <li class="navbar"><a class="a" href="exp.html">Work Experience</a></li>
-                            <li class="navbar"><a class="a" href="#">Contact</a></li>
+                            <li>Integrated Logistic Support</li>
+                            <li>Reliabilty Support</li>
+                            <li>Quality and Verification</li>
+                            <li>Structure computation and simulation (CATIA V5 and Hypermesh)</li>
+                            <li>Documentation</li>
                         </ul>
-                            <!-- A Search form is another common non-linear way to navigate through a website. -->
-                    </nav>
-                </div>
-            
-                <h2>UNIVERSITY OF BORDEAUX: Master in Aircraft Engineering</h2>
-                <p>
-                    So basically this master is about technical support for aircraft operation and maintenance. 
-                    It wraps up all the technology for a better and safer process for airlines and MRO to execute 
-                    their work in conformity with EASA rules and amendements. I have the following knowledge:
-                    <ul class="b">
-                        <li>Integrated Logistic Support</li>
-                        <li>Reliabilty Support</li>
-                        <li>Quality and Verification</li>
-                        <li>Structure computation and simulation (CATIA V5 and Hypermesh)</li>
-                        <li>Documentation</li>
-                    </ul>
-                </p>
-                <p>
-                    The master program lasted for about less than 2 years, from September 2018 to April 2020. 
-                    Unfortunately, covid-19 crisis hit hard the aerospace industry and I didn't have a chance to get
-                    any permanent contract so here I am.
-                </p>
-                <br>
-                <br>
-            
-                <h2>MITx: Machine Learning with python</h2>
-                <p>
-                    As I was an improvised data analyst in Airbus during my apprenticeship, I had to catch up 
-                    with the technologis used in data development. So I took a twenty nine (29) hours bootcamp
-                    for newbie data scientist on udemy, which basically thought me the basic knowledge and the 
-                    main tools for data scientist. But it was just the tip of the iceberg, so I took the course
-                    machine learning offered by the prestigious MIT, that course lasted for eighteen (18) weeks, 
-                    with five (5) big units, including one projects for each.
-                </p>
-                <p>
-                    The course content are the following:
-                    <ul class="b">
-                        <li>Linear models: perceptron and SVM</li>
-                        <li>Recommender system</li>
-                        <li>Neural network: Linear Neural Networks</li>
-                        <li>Convolutional NNs and Reccurent NNs</li>
-                        <li>Reinforcement Learning</li>
-                    </ul>
+                    </p>
+                    <p>
+                        The master program lasted for about less than 2 years, from September 2018 to April 2020. 
+                        Unfortunately, covid-19 crisis hit hard the aerospace industry and I didn't have a chance to get
+                        any permanent contract so here I am.
+                    </p>
                     <br>
-            
-                </p>
-                <h2>UC San Diego X: MicroMaster in Data Science and Big Data</h2>
-                <p>
-                    This is actually on going since I have decided a total reconversion from aircraft engineering
-                    to data science. This MicroMaster lasts about ten (10) months.
-                </p>
-                <h3>Python for Data Science</h3>
-                <p>
-                    This course includes the main (and necessary) tools needed for a newbie data scientist.
-                    <ul class="b">
-                        <li>Pythons basics</li>
-                        <li>Jupyter Notebook</li>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>Matplotlib</li>
-                        <li>Git</li>
-                        <li>Scikit Learn</li>
-                        <li>NTLK</li>
-                    </ul>
                     <br>
-            
-                 </p>
-                 <h3>Probability and Statistics</h3>
-                 <p>
-                    As we know both, machine learning algorithm are based on improved and applied probability
-                    and statistics. This course mainly explain the basics behind those algorithms for a better
-                    understanding.
-                 </p>
-                 <p>
-                     The entire course is done with help of the python's power in computation. The following main 
-                     subjects are studied.
-                     <ul class="b">
-                         <li>Sets and Counting</li>
-                         <li>Discrete probability</li>
-                         <li>General Discrete probability Spaces</li>
-                         <li>Random variables</li>
-                         <li>Pairs of random variables</li>
-                         <li>Common Distributions</li>
-                         <li>Central Limit Theorem</li>
-                         <li>Hypothesis testing</li>
-                         <li>PCA and regression</li>
-                         <li>Entropy and compression</li>
-                     </ul>
-                 </p>
-                 <h3>Big Data Analytics with PySpark</h3>
-                 <p>
-                    This course teaches how to perform statistical analysis of very large datasets that do not fit
-                    on a single computer. You will learn some of the most popular tools for performing this type of 
-                    analysis: apache spark, XGBoost and TensorFlow. I learned how to use these tools through Jupyter
-                    Notebooks and experience the power of combining narrative, code and graphics to create convincing
-                    analytical documents.
-                 </p>
-                 <p>
-                     The related subject are:
-                     <ul class="b">
-                         <li>Memory hierarchy, Latency vs Troughput</li>
-                         <li>Spark Basics</li>
-                         <li>DataFrames and SQL</li>
-                         <li>PCA and Weather Analysis</li>
-                         <li>K-Mearns and Instrinc Dimension</li>
-                         <li>Neural Networks and TensorFlow</li>
-                     </ul>
-                    <br>
-            
-                 </p>
+                
+                    <h2>MITx: Machine Learning with python</h2>
+                    <p>
+                        As I was an improvised data analyst in Airbus during my apprenticeship, I had to catch up 
+                        with the technologis used in data development. So I took a twenty nine (29) hours bootcamp
+                        for newbie data scientist on udemy, which basically thought me the basic knowledge and the 
+                        main tools for data scientist. But it was just the tip of the iceberg, so I took the course
+                        machine learning offered by the prestigious MIT, that course lasted for eighteen (18) weeks, 
+                        with five (5) big units, including one projects for each.
+                    </p>
+                    <p>
+                        The course content are the following:
+                        <ul class="b">
+                            <li>Linear models: perceptron and SVM</li>
+                            <li>Recommender system</li>
+                            <li>Neural network: Linear Neural Networks</li>
+                            <li>Convolutional NNs and Reccurent NNs</li>
+                            <li>Reinforcement Learning</li>
+                        </ul>
+                        <br>
+                
+                    </p>
+                    <h2>UC San Diego X: MicroMaster in Data Science and Big Data</h2>
+                    <p>
+                        This is actually on going since I have decided a total reconversion from aircraft engineering
+                        to data science. This MicroMaster lasts about ten (10) months.
+                    </p>
+                    <h3>Python for Data Science</h3>
+                    <p>
+                        This course includes the main (and necessary) tools needed for a newbie data scientist.
+                        <ul class="b">
+                            <li>Pythons basics</li>
+                            <li>Jupyter Notebook</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Git</li>
+                            <li>Scikit Learn</li>
+                            <li>NTLK</li>
+                        </ul>
+                        <br>
+                
+                     </p>
+                     <h3>Probability and Statistics</h3>
+                     <p>
+                        As we know both, machine learning algorithm are based on improved and applied probability
+                        and statistics. This course mainly explain the basics behind those algorithms for a better
+                        understanding.
+                     </p>
+                     <p>
+                         The entire course is done with help of the python's power in computation. The following main 
+                         subjects are studied.
+                         <ul class="b">
+                             <li>Sets and Counting</li>
+                             <li>Discrete probability</li>
+                             <li>General Discrete probability Spaces</li>
+                             <li>Random variables</li>
+                             <li>Pairs of random variables</li>
+                             <li>Common Distributions</li>
+                             <li>Central Limit Theorem</li>
+                             <li>Hypothesis testing</li>
+                             <li>PCA and regression</li>
+                             <li>Entropy and compression</li>
+                         </ul>
+                     </p>
+                     <h3>Big Data Analytics with PySpark</h3>
+                     <p>
+                        This course teaches how to perform statistical analysis of very large datasets that do not fit
+                        on a single computer. You will learn some of the most popular tools for performing this type of 
+                        analysis: apache spark, XGBoost and TensorFlow. I learned how to use these tools through Jupyter
+                        Notebooks and experience the power of combining narrative, code and graphics to create convincing
+                        analytical documents.
+                     </p>
+                     <p>
+                         The related subject are:
+                         <ul class="b">
+                             <li>Memory hierarchy, Latency vs Troughput</li>
+                             <li>Spark Basics</li>
+                             <li>DataFrames and SQL</li>
+                             <li>PCA and Weather Analysis</li>
+                             <li>K-Mearns and Instrinc Dimension</li>
+                             <li>Neural Networks and TensorFlow</li>
+                         </ul>
+                        <br>
+                
+                     </p>
+
+                </div>            
+                
             </body>
         </div>
         <div class="column right">
