@@ -15,9 +15,8 @@
 }
 /* Set additional styling options for the columns */
 .column {
-float:right;
+float: left;
 }
-
 
 /* Set width length for the left, right and middle columns */
 .left {
@@ -39,12 +38,12 @@ clear: both;
 }
 
 body {
-background-image: url("img/carbon.jpg");
+background-image: url("img/sk1.jpg");
 }
 h1 {
     color: darkslategray;
     text-align: left;
-    font-family:  "Sabado";
+    font-family: "Sabado";
     font-size: xx-large;
     margin: 20px 0px 20px 60px;
 }
@@ -52,37 +51,39 @@ h1 {
 h2 {
     color: rgb(6, 126, 90);
     text-align: left;
-    font-family:  "Sabado";
+    font-family: 'Sabado';
     font-size: x-large;
     margin: 20px 20px 20px 60px;
 }
 
 h3 {
-    color:rgb(0, 0, 0);
+    color:black;
     text-align: left;
     font-family: "Sajola";
     font-size: larger;
-    font-weight: bold;
-    margin: 20px 20px 5px 60px;
+    margin: 20px 20px 20px 60px;
 }
 p {
     color:dimgray;
     text-align: justify;
     font-family: 'Clear Sans';
     font-size: medium;
-    margin: 5px 20px 30px 20px;
+    margin: 20px 20px 20px 20px;
     text-indent: 40px;
 }
 
 ul {
-    color:rgb(255, 255, 255);
+    color:dimgray;
     list-style-type: circle;
     text-align: left;
     font-family: "Clear Sans";
     list-style-type: none;
-    overflow: hidden;
     font-size: medium;
+    overflow: hidden;
     margin: 20px 20px 20px 20px;
+}
+ul.b {
+    list-style-type: square;
 }
 
 img {
@@ -93,53 +94,86 @@ img {
     height: auto;
 }
 
-.icon_class {
-  margin-right: 20px;
-  float: right; 
-  width: 40px; 
-  height: 40px;
-}
-
 .fixed-nav-bar {
     position: fixed;
     width: 100%;
     height: 80px;
     background-color: #000000;
     text-align: center;
-}   
+}
+
+.navbar {
+    display: flex;
+/* This is used to make the navbar sticky, So that the
+    navbar stays at the top part even if we scroll */
+    position: sticky; 
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+
+/*it specifies the mouse cursor to be displayed
+    when it is pointed over the element */
+    cursor: pointer;
+}
 
 .navbar-list {
     display: inline;
     float: left;
     align-self: center;
     font-size: x-large;
-    color: white;
 }
 
 .a {
     font-family: "Sabado";
-    font-size: x-large;
     display: block;
-    line-height: 2em;
-    padding: 0.5em 0.5em;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-}
-
-nav li:hover > ul{
-    position:fixed;
-    display : block;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
 }
 
 .row-margin {
     margin-top: 90px;
+}
+
+* {box-sizing: border-box;}
+
+.input-style {
+    font-family: "Clear Sans";
+    font-size: medium;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    font-family: "Clear Sans";
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-family: "Clear Sans";
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 .icon_class {
