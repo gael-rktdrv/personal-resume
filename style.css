@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Sabado";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Sabado/Sabado.woff") format('woff');
+}
+@font-face {
+    font-family: "Sajola";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/Sajola/Sajola.woff") format('woff');
+}
+.body {
+    box-sizing: border-box;
+}
+/* Set additional styling options for the columns */
+.column {
+float:right;
+}
+
+
+/* Set width length for the left, right and middle columns */
+.left {
+width: 20%;
+}
+
+.middle {
+width: 60%;
+}
+
+.right {
+width: 20%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+body {
+background-image: url("img/carbon.jpg");
+}
+h1 {
+    color: darkslategray;
+    text-align: left;
+    font-family:  "Sabado";
+    font-size: xx-large;
+    margin: 20px 0px 20px 60px;
+}
+
+h2 {
+    color: rgb(6, 126, 90);
+    text-align: left;
+    font-family:  "Sabado";
+    font-size: x-large;
+    margin: 20px 20px 20px 60px;
+}
+
+h3 {
+    color:rgb(0, 0, 0);
+    text-align: left;
+    font-family: "Sajola";
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px 20px 5px 60px;
+}
+p {
+    color:dimgray;
+    text-align: justify;
+    font-family: 'Clear Sans';
+    font-size: medium;
+    margin: 5px 20px 30px 20px;
+    text-indent: 40px;
+}
+
+ul {
+    color:rgb(255, 255, 255);
+    list-style-type: circle;
+    text-align: left;
+    font-family: "Clear Sans";
+    list-style-type: none;
+    overflow: hidden;
+    font-size: medium;
+    margin: 20px 20px 20px 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.icon_class {
+  margin-right: 20px;
+  float: right; 
+  width: 40px; 
+  height: 40px;
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    text-align: center;
+}   
+
+.navbar-list {
+    display: inline;
+    float: left;
+    align-self: center;
+    font-size: x-large;
+    color: white;
+}
+
+.a {
+    font-family: "Sabado";
+    font-size: x-large;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+nav li:hover > ul{
+    position:fixed;
+    display : block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.row-margin {
+    margin-top: 90px;
+}
+
+.icon_class {
+  margin-right: 20px;
+  float: right; 
+  width: 40px; 
+  height: 40px;
+}
