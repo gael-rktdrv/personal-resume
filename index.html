@@ -1,54 +1,68 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-    <title style="font-family: 'Trebuchet MS';">Onja RAKOTONDRAVELO</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./icons/self.ico">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div style="background-color: rgb(0, 0, 0);">
-        <nav class="fixed-nav-bar">
-            <ul>
-                <li><a class="a navbar-list" href="index.html">Main</a></li>
-                <li><a class="a navbar-list" href="edu.html">Education</a></li>
-                <li><a class="a navbar-list" href="exp.html">Work Experience</a></li>
-                <li><a class="a navbar-list" href="skills.html">Skills</a></li>
-                <li><a class="a navbar-list" href="contact.html">Contact</a></li>
-                <li>
-                  <a href="https://github.com/gael-rktdrv">
-                  <img src="./links/github.svg" class="icon_class">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/onja-rakotondravelo/">
-                  <img src="./links/linkedin.svg" class="icon_class">
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:onja.rakotondravelo@protonmail.com">
-                  <img src="./links/email.svg" class="icon_class">
-                  </a>
-                </li>
-                <li>
-                  <a href="https://t.me/itaachi_uchiiha">
-                  <img src="./links/telegram.svg" class="icon_class">
-                  </a>
-                </li>
-            </ul>
-                <!-- A Search form is another common non-linear way to navigate through a website. -->
-        </nav>    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Onja RAKOTONDRAVELO</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
 
-    </div>
-    <div class="row">
-        <div class="column left">
-            <h2></h2>
-            <p></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+        
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                    });
+                 } // End if
+            });
+        });
+        </script>
+
+    </head>
+    <body>
+        <div class="behind">
+            <img src="img/contact.jpg" style="position: fixed;">
         </div>
-        <div class="column middle row-margin" style="background-color:#ffffff;">
-            <body>
-                <div>
-                    <h2>About me</h2>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="front" style="background-color:black; width: 100%; ">
+            <a href="#Main" class="logo">#HIRE_ME</a>
+            <!--
+            <img class="logo" src="quotes.ico" style="display: inline; width: 40px; height: 40px;">
+            -->
+            <nav>
+            <ul class="nav__links" style="display: inline";>
+                <li><a href="#Main">Main</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experience">Experiences</a></li>
+                <li><a href="#Skills">Skills</a></li>
+            </ul>
+            </nav>
+            <a class="contact_button" href="#Contact"><button style="color:aliceblue;display: inline;">Contact</button></a>
+        </header>
+
+        <section id="Main" class="block about_section front" >
+            <div class="content" style="padding-top: 100px; min-height: 700;">
+                <h2>About me</h2>
                     <p style="margin-left: 20px;">
                         <img src="img/self.jpg" class="center" style="float: left; margin-right: 20px; width: 130px; height: 130px;">
                         Hello, welcome to this web page, my name is Onja RAKOTONDRAVELO, I am a freshly graduate from 
@@ -57,16 +71,16 @@
                         I have decided to do a complete professional reorientation in term of career goals and projects 
                         keep developing into that field.  
                     </p>
-                    <p>
+                    <p style=" padding-bottom: 40px;">
                         I have always been interested in programming, and since I was working in data development in Airbus, 
                         I have decided to pursue a path of data scientist. My actual plan know to find a job or an internship 
                         that can allow me to get some experience in data science and get to the advanced level. 
                     </p>
-                </div>
+                <!--
                 <br style="clear:both;"/>
-                <div>
-                    <h2>About my non-typical path</h2>
-                        <h3>Saint-Petersburg</h3>
+                -->
+                <h2>About my non-typical path</h2>
+                    <h3>Saint-Petersburg</h3>
                         <p>
                             Back in 2011, I graduated from high 
                             school with a very good result (but there is nothing to be proud of). Back then, I was 
@@ -86,9 +100,8 @@
                             the most famous places of the city such as “The hermitage museum”, “Peter and Paul’s fortress”, 
                             “Peterghof” and so more.
                         </p>
-                </div>
-                <div>
-                        <h3>Samara</h3>
+
+                    <h3>Samara</h3>
                         <p>
                             I had to leave Saint-Petersburg at the end of july 2013 for another city, where my university
                             was. So I arrived to Samara, I met few country-mates there. I began my bachelor program in 
@@ -105,9 +118,8 @@
                             yourself. Always being better than what you were yesterday. Always surpass what you did 
                             the day or the week before.
                         </p>
-                </div>
-                <div>
-                        <h3>France</h3>
+                    
+                    <h3>France</h3>
                         <p>
                             At the end of September 2018, I left Russia for France to pursue a Master degree program in 
                             Aircraft Engineering. I got to work as an intern in a laboratory of the university by the 
@@ -122,17 +134,192 @@
                             Data Analytics from UC San Diego, and at the same time, practicing on kaggle, and learning 
                             frontend tools.
                         </p>
-                </div>                    
-            </body>
-        </div>
-        <div class="column right">
-            <h2></h2>
-            <p></p>
-        </div>
-    </div>
- </body>
+            </div>
+        </section>
 
+        <section id="Education" class="block about_section front" >
+            <div class="content">
+                <h3>UC San Diego X</h3>
+                    <p class="info">MicroMaster in Data Science and Big Data <span>&bull;</span> <em class="date">July 2021</em></p>
 
+                    <p style="text-align: justify;"> 
+                        In this program, the main skills developed are a well-rounded understanding of the mathematical and computational 
+                        tools that form the basis of data science and how to use those tools to make data-driven business recommendations. 
+                        This  program encompasses two sides of data science learning: the mathematical and the applied. Mathematical courses 
+                        cover probability, statistics, and machine learning. The applied courses cover the use of specific toolkit and 
+                        languages such as Python, Numpy, Matplotlib, pandas and Scipy, the Jupyter notebook environment and Apache Spark 
+                        to delve into real world data. The goal is to learn how to collect, clean and analyze big data using popular open 
+                        source software will allow learner to perform large-scale data analysis and present the findings in a convincing, 
+                        visual way. When combined with expertise in a particular type of business, it will have a great impact on the skills 
+                        needed nowadays with the evolution of the industry towards a forth great revolution.
+                    </p>
+                <h3>MITx </h3>
+                    <p class="info">Certification in Machine Learning (Python) <span>&bull;</span> <em class="date">May 2021</em></p>
+
+                    <p style="text-align: justify;"> 
+                        Machine learning methods are commonly used across engineering and sciences, from computer systems to physics. 
+                        Moreover, commercial sites such as search engines, recommender systems, advertisers, and financial institutions 
+                        employ machine learning algorithms for content recommendation, predicting customer behavior, compliance, or risk. 
+                        As a discipline, machine learning tries to design and understand computer programs that learn from experience for 
+                        the purpose of prediction or control. This course includes principles and algorithms for turning training data 
+                        into effective automated predictions and covers: representation, over-fitting, regularization, generalization, 
+                        VC dimension, clustering, classification, recommender problems, probabilistic modeling, reinforcement learning, 
+                        on-line algorithms, support vector machines, and neural networks/deep learning. The main skills that are developed 
+                        are understanding principles behind machine learning problems such as classification, regression, clustering, 
+                        and reinforcement learning, implementing and analyzing models such as linear models, kernel machines, neural networks, 
+                        and graphical models, choosing suitable models for different applications, implementing and organizing machine learning 
+                        projects, from training, validation, parameter tuning, to feature engineering, implementing and experimenting with the 
+                        algorithms in several Python projects designed for different practical applications.
+                    </p>
+                <h3>Université de Bordeaux</h3>
+                    <p class="info">Master of Science in Aircraft Engineering <span>&bull;</span> <em class="date">April 2020</em></p>
+  
+                    <p style="text-align: justify;">
+                       The objectives relate to engineering and maintenance in aeronautics. More specifically, operational maintenance, which
+                       consists of defining maintenance and repair operations to ensure regulatory compliance and operational readiness 
+                       of an aircraft in a given fleet. This constitutes the first level of industrial activity such as understand the behavior 
+                       of structures under different stresses (fatigue, ablative flow and radiation in the spatial context). Identify 
+                       the resulting degradation by using expert appraisals and diagnostic methods. Also, define the methodological aspects of 
+                       repairs, as well as modeling and the optimization of these repairs then Carry out the validation tests in accordance 
+                       with the regulations in force. One of the main part is also, knowing the manuals for common repair techniques.
+                    </p>
+            </div>
+        </section>
+            
+        <section id="Experience" class="block resume_section front">
+            <div class="content">
+                <h2>ATR/Airbus: Data Analyst</h2>
+                <p>
+                    My main experience was as a data analyst at ATR, I was in charge of analysis of a large 
+                    dataset of aircraft maintenance reports. ATR, as they are aircraft designer and 
+                    constructor, have multiple partnerships with other companies. Some of those companies 
+                    are MRO (Maintenance Repair Overhall), those kind of companies have the role of doing 
+                    the maintenance of aircraft. 
+                </p>
+                <h3>
+                    Few things about the aircraft industry
+                </h3>
+                <p>
+                    In the aircraft industry, every modifications, every step linked to any process that 
+                    concerns an aircraft is recorded and so ins the process of aircraft maintenance. In 
+                    one hand, the EASA, an European authority, that is in charge of the regularization of 
+                    aircraft design, construction, operation issues most of the constraints that should be 
+                    applied on every type of aircraft (in Europe) . In the other hand, aircraft manufacturer 
+                    such as Airbus or ATR, issues the documentation that concerns the process linked to 
+                    their specific aircraft. Just to name a few of them:
+                    <ul class="b">
+                        <li>MRBR: Maintenance Review Board Report</li>
+                        <li>MPD: Maintenance Planning Document</li>
+                        <li>IPC: Illustration Part Catalog</li>
+                    </ul>
+                </p>
+                <p>
+                    The aircraft industry has a very strict regulation, and that resulted to a very high 
+                    level of safety (Air transportation being the safest way of traveling).
+                </p>
+                <h3>
+                    My work at ATR
+                </h3>
+                <p>
+                    So back to my work, I had to retrieve every kind of information that could be used from 
+                    these reports. The reports themselves included: the maintenance duration, the default 
+                    description, the parts changed, the tasks. So, from those information, I could get a 
+                    model of maintenance cost over aircraft age, redundancy of defaults, and most costing 
+                    tasks.
+                </p>
+                <br>
+                <br>
+            
+                <h2>I2M laboratory: Data analyst trainee</h2>
+                <p>
+                    This project was about studying the characteristics of the interface made with metal 
+                    and elastomer., working mainly with Matlab, I worked on image processing to do 
+                    measurement. 
+                    During the first part of the project, we would test and measure the elastomer characteristics 
+                    on a specific stand, with specific software, and taking picture at the same time. Then the 
+                    second part is to measure the elongation of the elastomer sample with Matlab. The third step 
+                    is to compare the software measurement with the matlab results.
+                    For second part of the projects, we would them do the same operation but only with different 
+                    kind of samples, an elastomer stuck with a piece of metal. And for the second part, we would 
+                    use different samples, with different artificial aging process. That part allowed us to 
+                    measure the effect of aging for the interface and let us know how does it behave with time.
+                </p>
+            </div>
+        </section>
+
+        <section id="Skills" class="block contact_section front">
+            <div class="content">
+                <h2>Soft</h2>
+                    <p style="text-align: justify;">
+                        About my communication skills, I am someone that is more about listening than speaking but I have a <b>good presentation</b> both 
+                        speaking and wirting. Also, I feel comfortable whenever I need to do <b>public speaking</b>. <b>Adaptation</b>, <b>great desire to learn</b> and 
+                        <b>good creativity</b> are the words that can describe me the most. For me, life is about learning new things everyday, discovering 
+                        so much knowledge, cultures. We never stop learning, and there is no limit for it. When working, I like doing my research, 
+                        and think logically with flexibility. Whenever there is an issue, I like doing the <b>troubleshooting independently</b> since I like 
+                        being independent. Last but not the least,  collaboration, although I like being independent, <b>collaboration is the key</b> for 
+                        a team success, and when it is needed I am always happy to join.
+                    </p>
+                <h2>Hard</h2>
+
+                    <h3>Data Science</h3>
+                        <p style="text-align: justify;">
+                            As I mentioned earlier, I am actually doing a reconversion from being an aircraft engineer to be a data scientist. I have 
+                            chosen it because, I want to transfer what I have learned during my apprenticeship to be the basis of my career objectives. 
+                            At this time, I can work with the following programming languages:
+                            <ul style="list-style: square inside; margin-left: 20px">
+                                <li>Python with advanced level on OOP conception, hardware acceleration with multithreading and multiprocessing;</li>
+                                <li>Matlab with a good level in scripting;</li>
+                                <li>VBA/Excel for automation of Excel sheets;</li>
+                                <li>SQL for queries from databases.</li>
+                            </ul>
+                        </p>
+                        <p>
+                            With Python as my main tool, I can work with the following frameworks:
+                            <ul style="list-style: square inside; margin-left: 20px">
+                                <li>Pandas, NumPy, OpenPyxl, Matplotlib, Seaborn, PySpark for data acqusition, data wrangling, data mining;</li>
+                                <li>Scikit Learn, StatsModels, Pytorch for machine learning modeling;</li>
+                                <li>Jupyter Notebooks, VSCode, GitHub as IDE platform for CI/CD;</li>
+                                <li>Bokeh, MS Office, Canva for data vizualization and reporting;</li>
+                                <li>Linux(Debian Based), Windows as OS and work environment.</li>
+                            </u>
+                    <h3>Aircraft Engineering</h3>
+                        <p style="text-align: justify;">
+                            As an aircraft engineer, my knowledge are very rich, working with <b>aircraft documentation</b> such as the EASA Part 21, CS 25, 
+                            working on <b>continuous airworthiness management</b>. I also have some knowledge in <b>integrated logistic support</b> and  <b>life cycle 
+                            cost</b>. Not neglecting Structure design and Repair <b>CATIA V5</b> and <b>KOMPAS 3D</b> and Computation and Simulation with <b>Hypermesh</b> and 
+                            Finite elements methods. And finally, <b>Aircarft maintenance</b> (Line and base maintenance management), Aircraft system maintenance 
+                            (hydraulic, oil, fuel, landing gear) and Engine maintenance.
+                        </p>
+
+            </div>
+        </section>
+
+        <section id="Contact" class="block contact_section front">
+            <div class="content">
+                <body>
+                    <div class="container">
+                        <form action="action_page.php">
+                        
+                            <label class="input-style" for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                            <label class="input-style" for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                            <label class="input-style"  for="mail">E-mail address</label>
+                            <input type="text" id="mail" name="mailaddress" placeholder="Your last e-mail..">
+                        
+                            <label class="input-style"  for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        
+                        </form>
+                    </div>
+                </body>
+            </div>
+        </section>
+
+        </div>
+    </body>
 </html>
-
-

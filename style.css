@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Katibeh&family=KoHo&family=Roboto:wght@300&display=swap');
+
 @font-face {
     font-family: "Sabado";
     font-style: normal;
@@ -10,134 +14,161 @@
     font-weight: normal;
     src: url("./fonts/Sajola/Sajola.woff") format('woff');
 }
-.body {
-    box-sizing: border-box;
-}
-/* Set additional styling options for the columns */
-.column {
-float: left;
-}
 
-/* Set width length for the left, right and middle columns */
-.left {
-width: 20%;
-}
+/* Global
+===========================================================================*/
+* {box-sizing: border-box;}
 
-.middle {
-width: 60%;
-}
 
-.right {
-width: 20%;
+header {
+    display: inline;
 }
-
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
 body {
-background-image: url("img/sk1.jpg");
-}
-h1 {
-    color: darkslategray;
-    text-align: left;
-    font-family: "Sabado";
-    font-size: xx-large;
-    margin: 20px 0px 20px 60px;
+    margin: 0;
+    padding: 0;
+    /*background-image: url("img/work.jpg");*/
 }
 
-h2 {
-    color: rgb(6, 126, 90);
-    text-align: left;
-    font-family: 'Sabado';
-    font-size: x-large;
-    margin: 20px 20px 20px 60px;
+h1, h2 {
+    font-family: "Sabado";
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: uppercase;
+
 }
 
 h3 {
-    color:black;
-    text-align: left;
-    font-family: "Sajola";
-    font-size: larger;
-    margin: 20px 20px 20px 60px;
+    font-family: Hind;
 }
+
 p {
-    color:dimgray;
+    font-family: "Roboto";
+    font-size: medium;
+    margin: auto;
     text-align: justify;
-    font-family: 'Clear Sans';
-    font-size: medium;
-    margin: 20px 20px 20px 20px;
-    text-indent: 40px;
+    line-height: 15px;
 }
 
-ul {
-    color:dimgray;
-    list-style-type: circle;
-    text-align: left;
-    font-family: "Clear Sans";
-    list-style-type: none;
-    font-size: medium;
-    overflow: hidden;
-    margin: 20px 20px 20px 20px;
-}
-ul.b {
-    list-style-type: square;
+li {
+    font-family: "Roboto", Arial;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
-}
-
-.fixed-nav-bar {
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background-color: #000000;
-    text-align: center;
-}
-
-.navbar {
+header {
     display: flex;
-/* This is used to make the navbar sticky, So that the
-    navbar stays at the top part even if we scroll */
-    position: sticky; 
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    top: 0px;
-
-/*it specifies the mouse cursor to be displayed
-    when it is pointed over the element */
+    position: fixed;
+    height: 100px;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(113, 185, 201, 0.548);
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
-}
-
-.navbar-list {
-    display: inline;
-    float: left;
-    align-self: center;
+    transition: all .3s ease 0s;
+    display: inline-block;
+    font-family: "KoHo", sans-serif;
+    font-weight: 500;
     font-size: x-large;
+    color:rgb(20, 143, 143);
+    text-decoration: none;   
 }
 
-.a {
-    font-family: "Sabado";
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+button:hover {
+    background-color: rgba(113, 185, 201, 1);
+
+}
+/*  */
+
+.front {
+    z-index: 5;
+}
+
+.behind {
+    z-index: 3;
+}
+
+.info {
+    font-family: "Katibeh", Arial, Helvetica, sans-serif;
+    padding: 5px;
+    font-size: xx-large;
+}
+/* */
+
+/* Header
+===========================================================================*/
+
+
+
+/* Navbar
+===========================================================================*/
+.logo {
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: xx-large;
+    font-family: "Hind";
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.nav__links {
+    list-style: none;
+    font-weight: bolder;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all .3s ease 0s;
+    font-family: "KoHo", sans-serif;
+    font-weight: 500;
+    font-size: xx-large;
+    color:rgb(20, 143, 143);
     text-decoration: none;
 }
 
-.row-margin {
-    margin-top: 90px;
+.nav__links li a:hover {
+    color:bisque;
 }
 
-* {box-sizing: border-box;}
+/* Sections
+===========================================================================*/
 
+.content {
+    width: 850px;
+    text-align: justify;
+    align-content: center;
+    margin: auto;
+    min-height: 600px;
+    background-color: cadetblue;
+    position: relative;
+    padding: 20px;
+}
+
+.block {
+    margin-bottom: 100px;
+}
+/*
+.about_section {
+    background-image: url("img/work.jpg");
+}
+.resume_section {
+    background-image: url("img/work.jpg");
+}
+.contact_section {
+    background-image: url("img/contact.jpg");
+}
+*/
+
+/* Contact
+===========================================================================*/
+.contact_button {
+    padding-right: 20px;
+}
 .input-style {
     font-family: "Clear Sans";
     font-size: medium;
@@ -172,7 +203,7 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: cadetblue;
     padding: 20px;
 }
 
